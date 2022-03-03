@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ie_bike_model"
+authors = [{name = "Fernando Rivilla", email = "fernando.rivilla@student.ie.edu"}]
+dynamic = ["version", "description"]
+dependencies = [
+  "pandas",
+  "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pytest",
+    "hypothesis",
+]
